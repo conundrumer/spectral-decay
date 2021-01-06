@@ -16,5 +16,4 @@ serde = "1.0.118"
 [dev-dependencies]
 
 [lib]
-# this needs to be commented out to run examples and tests
 crate-type = ["cdylib"]
