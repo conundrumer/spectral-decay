@@ -9,7 +9,7 @@ checksum = "cdb031dd78e28731d87d56cc8ffef4a8f36ca26c38fe2de700543e627f8a464a"
 [[package]]
 name = "baseplug"
 version = "0.1.0"
-source = "git+https://github.com/wrl/baseplug?branch=trunk#22d31f4b4fdb55f52190e0747ae7d3dc4b654acc"
+source = "git+https://github.com/wrl/baseplug?branch=trunk#9cb5cc8934c150326b4f98de088b2285f2e12ff6"
 dependencies = [
  "baseplug-derive",
  "num-traits",
@@ -22,7 +22,7 @@ dependencies = [
 [[package]]
 name = "baseplug-derive"
 version = "0.1.0"
-source = "git+https://github.com/wrl/baseplug?branch=trunk#22d31f4b4fdb55f52190e0747ae7d3dc4b654acc"
+source = "git+https://github.com/wrl/baseplug?branch=trunk#9cb5cc8934c150326b4f98de088b2285f2e12ff6"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -107,6 +107,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "primal-check"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "01419cee72c1a1ca944554e23d83e483e1bccf378753344e881de28b5487511d"
+dependencies = [
+ "num-integer",
+]
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -150,22 +159,23 @@ dependencies = [
 
 [[package]]
 name = "realfft"
-version = "0.3.0"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "29a38036df3019137318614d1bbaa0c04459f51b8640c6c475f5435509f128cf"
+checksum = "78570e3808e54d89bbeeabe064a61923a023d3822023344a9257989316cb107e"
 dependencies = [
  "rustfft",
 ]
 
 [[package]]
 name = "rustfft"
-version = "4.1.0"
+version = "5.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f107ffb2ec15915d932b7b1537fe4d6efb36955ee2b06f8f759c80a0725f80b1"
+checksum = "615fb8169a56470f08d8c51b4754c6f34bf515fc0129549e8d40dac733e141bd"
 dependencies = [
  "num-complex",
  "num-integer",
  "num-traits",
+ "primal-check",
  "strength_reduce",
  "transpose",
 ]
@@ -226,9 +236,9 @@ checksum = "a3ff2f71c82567c565ba4b3009a9350a96a7269eaa4001ebedae926230bc2254"
 
 [[package]]
 name = "syn"
-version = "1.0.57"
+version = "1.0.58"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4211ce9909eb971f111059df92c45640aad50a619cf55cd76476be803c4c68e6"
+checksum = "cc60a3d73ea6594cd712d830cc1f0390fd71542d8c8cd24e70cc54cdfd5e05d5"
 dependencies = [
  "proc-macro2",
  "quote",
